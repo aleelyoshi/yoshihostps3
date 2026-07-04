@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>YoshiHost PS3 - Creado por Ale el Yoshi</title>
+    
+    <style type="text/css">
+        /* Estilos base compatibles con PS3 */
+        body {
+            background-color: #6A18A5;
+			background-image: url("bg.png");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: center;
+			background-size: cover;
+            color: #FFFFFF;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* BANNER */
+        .banner-container {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #6A18A5;
+            border-bottom: 4px solid #C78FEF;
+        }
+        
+        .banner-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: none;
+        }
+
+        .container {
+            width: 95%;
+            margin: 20px auto;
+        }
+
+        /* MENU DE CATEGORIAS (100% del ancho) */
+        table.categorias-menu {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 10px;
+            margin-bottom: 30px;
+        }
+
+        .icono-cat {
+            display: block;
+            background-color: #481070;
+            border: 2px solid #AC5AE7;
+            padding: 15px 5px;
+            color: #FFFFFF;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .icono-cat img {
+            display: block;
+            margin: 0 auto 10px auto;
+            width: 128px;
+            height: 128px;
+            border: none;
+        }
+
+        .icono-cat.activo {
+            border-color: #C78FEF;
+            color: #FFFFFF;
+            background-color: #6A18A5;
+        }
+
+        /* GRID DE DESCARGAS */
+        .grid-descargas {
+            text-align: center;
+        }
+
+        .item-descarga {
+            display: inline-block;
+            width: 170px;
+            margin: 15px 20px;
+            vertical-align: top;
+            text-align: center;
+            display: none; /* Oculto hasta que el script actúa */
+        }
+
+        .item-descarga a {
+            text-decoration: none;
+            color: #FFFFFF;
+            display: block;
+            outline: none;
+        }
+
+        .item-descarga img {
+            width: 160px;
+            height: 160px;
+            border: 3px solid transparent;
+            border-radius: 15px; 
+            margin-bottom: 8px;
+        }
+
+        .item-descarga a:hover img {
+            border-color: #C78FEF;
+            background-color: #6A18A5;
+        }
+
+        .item-descarga span {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner-container">
+        <img src="banner.png" alt="YoshiHost PS3 Banner">
+    </div>
+
+    <div class="container">
+            
+            <div class="item-descarga" data-categoria="hen493">
+                <a href="./HEN/493/index.html">
+                    <img src="img/sub/autohen.png" alt="Auto HEN">
+                    <span>Auto HEN 4.93 Oficial</span>
+                </a>
+            </div>
+            <div class="item-descarga" data-categoria="hen493">
+                <a href="https://github.com/Videogamesscz/videostore/raw/refs/heads/main/herramientas/FIX%20HEN%204.93%20OFICIAL%20by%20Videogames%20SCZ.pkg">
+                    <img src="img/sub/fix.png" alt="FIX">
+                    <span>Multi FIX 4.93</span>
+                </a>
+			</div>
+
+			<div class="item-descarga" data-categoria="hen492">
+                <a href="./HEN/492o/index.html">
+                    <img src="img/sub/autohen.png" alt="Auto HEN">
+                    <span>Auto HEN 4.92 Oficial</span>
+                </a>
+            </div>
+		    <div class="item-descarga" data-categoria="hen492">
+                <a href="./HEN/492/hen492.html">
+                    <img src="img/sub/autohen.png" alt="Auto HEN">
+                    <span>Auto HEN 4.92 Alterno</span>
+                </a>
+	        </div>
+            <div class="item-descarga" data-categoria="hen492">
+                <a href="https://github.com/Videogamesscz/videostore/raw/refs/heads/main/herramientas/FIX%20HEN%204.92%20by%20Videogames%20SCZ.pkg">
+                    <img src="img/sub/fix.png" alt="FIX">
+                    <span>Multi FIX 4.92</span>
+                </a>
+			</div>
+
+            <div class="item-descarga" data-categoria="cfw">
+                <a href="https://www.ps3toolset.com/bgtoolset/">
+                    <img src="img/sub/bg.png" alt="BGTOOLSET">
+                    <span>BGToolset</span>
+                </a>
+            </div>
+            <div class="item-descarga" data-categoria="cfw">
+                <a href="https://github.com/Videogamesscz/videostore/raw/refs/heads/main/herramientas/FIX%20CEX%20CFW%204.92%20EVILNAT%20by%20Videogames%20SCZ.pkg">
+                    <img src="img/sub/fix.png" alt="FIX CEX">
+                    <span>FIX CEX</span>
+                </a>
+            </div>
+            <div class="item-descarga" data-categoria="cfw">
+                <a href="https://github.com/Videogamesscz/videostore/raw/refs/heads/main/herramientas/FIX%20PEX-DEX%20CFW%204.92%20EVILNAT%20by%20Videogames%20SCZ.pkg">
+                    <img src="img/sub/fix.png" alt="FIX PEX">
+                    <span>FIX PEX-D-PEX-DEX</span>
+                </a>
+            </div>
+            <div class="item-descarga" data-categoria="cfw">
+                <a href="https://github.com/Videogamesscz/videostore/raw/main/herramientas/Extended_Download_Plugin_v1.00.pkg">
+                    <img src="img/sub/extended.png" alt="EXTENDED">
+                    <span>Extended Download Plugin</span>
+                </a>
+            </div>
+
+            <div class="item-descarga" data-categoria="aplicaciones">
+                <a href="https://github.com/aldostools/Resources/releases/download/Addons/multiMAN.pkg">
+                    <img src="img/sub/multiman.png" alt="MultiMAN">
+                    <span>MultiMAN</span>
+                </a>
+            </div>
+            <div class="item-descarga" data-categoria="aplicaciones">
+                <a href="https://github.com/aldostools/IRISMAN/releases/download/4.91/IRISMAN_4.91.pkg">
+                    <img src="img/sub/irisman.png" alt="irisMAN">
+                    <span>irisMAN</span>
+                </a>
+            </div>
+            <div class="item-descarga" data-categoria="aplicaciones">
+                <a href="https://github.com/Zarh/ManaGunZ/releases/download/1.41/ManaGunZ_v1.41.pkg">
+                    <img src="img/sub/magagunz.png" alt="ManaGunZ">
+                    <span>ManaGunZ</span>
+                </a>
+            </div>
+            <div class="item-descarga" data-categoria="aplicaciones">
+                <a href="https://github.com/bucanero/apollo-ps3/releases/download/v2.2.0/apollo-ps3.pkg">
+                    <img src="img/sub/apollo.png" alt="Apollo Save">
+                    <span>Apollo Save</span>
+                </a>
+            </div>
+            <div class="item-descarga" data-categoria="aplicaciones">
+                <a href="https://github.com/bucanero/pkgi-ps3/releases/download/v1.2.4/pkgi-ps3.pkg">
+                    <img src="img/sub/pkgi.png" alt="PKGi PS3">
+                    <span>PKGi PS3</span>
+                </a>
+            </div>
+            <div class="item-descarga" data-categoria="aplicaciones">
+                <a href="https://github.com/aldostools/Resources/releases/download/RetroArch_CE/RetroArch_CE.pkg">
+                    <img src="img/sub/retroarch.png" alt="RetroArch">
+                    <span>RetroArch CE</span>
+                </a>
+            </div>
+            <div class="item-descarga" data-categoria="aplicaciones">
+                <a href="https://github.com/aldostools/webMAN-MOD/releases/download/1.47.48/webMAN_MOD_1.47.48_Installer.pkg">
+                    <img src="img/sub/webman.png" alt="Webman Mod">
+                    <span>Webman MOD</span>
+                </a>
+            </div>
+            <div class="item-descarga" data-categoria="aplicaciones">
+                <a href="https://github.com/Videogamesscz/videostore/releases/download/4.0/VIDEOSTORE.4.0.pkg">
+                    <img src="img/sub/videostore.png" alt="VIDEOSTORE">
+                    <span>VIDEOSTORE</span>
+                </a>
+			</div>
+			
+            <div class="item-descarga" data-categoria="multimedia">
+                <a href="https://movian.eu/Playstation 3/movianM7-7.0.264-playstation3.pkg">
+                    <img src="img/sub/movian.png" alt="Movian">
+                    <span>Movian</span>
+                </a>
+            </div>
+			<div class="item-descarga" data-categoria="multimedia">
+                <a href="TU_LINK_AQUI">
+                    <img src="img/sub/passionwii.png" alt="Passion Wii">
+                    <span>Plugin Passion Wii Streaming para Movian</span>
+                </a>
+			</div>
+			<div class="item-descarga" data-categoria="multimedia">
+                <a href="https://www.nopsn.org/pkg/ps3/youtube/archive/Youtube-v3.02-v3.03-SPOOF-%5BNPEB01229%5D-NoPSN.pkg">
+                    <img src="img/sub/youtube.png" alt="YouTube">
+                    <span>YouTube</span>
+                </a>
+            </div>
+			
+			<div class="item-descarga" data-categoria="utilidades">
+                <a href="https://github.com/Videogamesscz/videostore/blob/main/herramientas/C00%20UNLOCK.pkg">
+                    <img src="img/sub/c00.png" alt="C00">
+                    <span>C00 Demo Unlocker</span>
+                </a>
+            </div>
+            <div class="item-descarga" data-categoria="utilidades">
+                <a href="https://github.com/Videogamesscz/videostore/blob/main/herramientas/RAP%20PS2.pkg">
+                    <img src="img/sub/ps2.png" alt="RAP">
+                    <span>RAP PS2</span>
+                </a>
+            </div>
+            <div class="item-descarga" data-categoria="utilidades">
+                <a href="https://github.com/Videogamesscz/videostore/blob/main/herramientas/14.500%20raps%20-%20HEN.pkg">
+                    <img src="img/sub/psn.png" alt="LICENCIAS">
+                    <span>Licencias PSN</span>
+                </a>
+            </div>
+    </div>
+
+    <script type="text/javascript">
+        function filtrar(categoria) {
+            var botones = ['hen493', 'hen492', 'cfw', 'aplicaciones', 'multimedia', 'utilidades'];
+            
+            for (var i = 0; i < botones.length; i++) {
+                document.getElementById('btn-' + botones[i]).className = 'icono-cat';
+            }
+            document.getElementById('btn-' + categoria).className = 'icono-cat activo';
+
+            var contenedor = document.getElementById('contenedor-tarjetas');
+            var tarjetas = contenedor.getElementsByTagName('div');
+
+            for (var j = 0; j < tarjetas.length; j++) {
+                var tarjeta = tarjetas[j];
+                if (tarjeta.className.indexOf('item-descarga') !== -1) {
+                    var catTarjeta = tarjeta.getAttribute('data-categoria');
+                    if (categoria === catTarjeta) {
+                        tarjeta.style.display = 'inline-block';
+                    } else {
+                        tarjeta.style.display = 'none';
+                    }
+                }
+            }
+        }
+
+        window.onload = function() {
+            filtrar('hen493');
+        };
+    </script>
+</body>
+</html>
