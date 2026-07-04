@@ -269,35 +269,5 @@
                 </a>
             </div>
     </div>
-
-    <script type="text/javascript">
-        function filtrar(categoria) {
-            var botones = ['hen493', 'hen492', 'cfw', 'aplicaciones', 'multimedia', 'utilidades'];
-            
-            for (var i = 0; i < botones.length; i++) {
-                document.getElementById('btn-' + botones[i]).className = 'icono-cat';
-            }
-            document.getElementById('btn-' + categoria).className = 'icono-cat activo';
-
-            var contenedor = document.getElementById('contenedor-tarjetas');
-            var tarjetas = contenedor.getElementsByTagName('div');
-
-            for (var j = 0; j < tarjetas.length; j++) {
-                var tarjeta = tarjetas[j];
-                if (tarjeta.className.indexOf('item-descarga') !== -1) {
-                    var catTarjeta = tarjeta.getAttribute('data-categoria');
-                    if (categoria === catTarjeta) {
-                        tarjeta.style.display = 'inline-block';
-                    } else {
-                        tarjeta.style.display = 'none';
-                    }
-                }
-            }
-        }
-
-        window.onload = function() {
-            filtrar('hen493');
-        };
-    </script>
 </body>
 </html>
