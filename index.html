@@ -123,9 +123,15 @@
         <table class="categorias-menu" cellpadding="0" cellspacing="10" border="0">
             <tr>
                 <td width="20%" align="center" valign="top">
-                    <a href="javascript:void(0);" onclick="filtrar('hen')" class="icono-cat activo" id="btn-hen">
+                    <a href="javascript:void(0);" onclick="filtrar('hen493')" class="icono-cat activo" id="btn-hen493">
                         <img src="img/hen.png" alt="HEN">
-                        HEN
+                        HEN 4.93
+                    </a>
+                </td>
+                <td width="20%" align="center" valign="top">
+                    <a href="javascript:void(0);" onclick="filtrar('hen492')" class="icono-cat" id="btn-hen492">
+                        <img src="img/hen.png" alt="HEN">
+                        HEN 4.92
                     </a>
                 </td>
                 <td width="20%" align="center" valign="top">
@@ -157,45 +163,58 @@
 
         <div class="grid-descargas" id="contenedor-tarjetas">
             
-            <div class="item-descarga" data-categoria="hen">
-                <a href="TU_LINK_AQUI">
+            <div class="item-descarga" data-categoria="hen493">
+                <a href="./HEN/493/index.html">
                     <img src="autohen.png" alt="Auto HEN">
-                    <span>Auto HEN</span>
+                    <span>Auto HEN 4.93 Oficial</span>
                 </a>
             </div>
-            <div class="item-descarga" data-categoria="hen">
-                <a href="TU_LINK_AQUI">
+            <div class="item-descarga" data-categoria="hen493">
+                <a href="https://github.com/Videogamesscz/videostore/raw/refs/heads/main/herramientas/FIX%20HEN%204.93%20OFICIAL%20by%20Videogames%20SCZ.pkg">
                     <img src="fix.png" alt="FIX">
-                    <span>FIX</span>
+                    <span>Multi FIX 4.93</span>
+                </a>
+			</div>
+
+			<div class="item-descarga" data-categoria="hen492">
+                <a href="./HEN/492o/index.html">
+                    <img src="autohen.png" alt="Auto HEN">
+                    <span>Auto HEN 4.92 Oficial</span>
                 </a>
             </div>
-            <div class="item-descarga" data-categoria="hen">
-                <a href="TU_LINK_AQUI">
-                    <img src="hfw.png" alt="HFW">
-                    <span>HFW</span>
+		    <div class="item-descarga" data-categoria="hen492">
+                <a href="./HEN/492/index.html">
+                    <img src="autohen.png" alt="Auto HEN">
+                    <span>Auto HEN 4.92 Alterno</span>
                 </a>
-            </div>
+	        </div>
+            <div class="item-descarga" data-categoria="hen492">
+                <a href="https://github.com/Videogamesscz/videostore/raw/refs/heads/main/herramientas/FIX%20HEN%204.92%20by%20Videogames%20SCZ.pkg">
+                    <img src="fix.png" alt="FIX">
+                    <span>Multi FIX 4.92</span>
+                </a>
+			</div>
 
             <div class="item-descarga" data-categoria="cfw">
-                <a href="TU_LINK_AQUI">
+                <a href="https://www.ps3toolset.com/bgtoolset/">
                     <img src="bgtoolset.png" alt="BGTOOLSET">
                     <span>BGToolset</span>
                 </a>
             </div>
             <div class="item-descarga" data-categoria="cfw">
-                <a href="TU_LINK_AQUI">
+                <a href="https://github.com/Videogamesscz/videostore/raw/refs/heads/main/herramientas/FIX%20CEX%20CFW%204.92%20EVILNAT%20by%20Videogames%20SCZ.pkg">
                     <img src="fix.png" alt="FIX CEX">
                     <span>FIX CEX</span>
                 </a>
             </div>
             <div class="item-descarga" data-categoria="cfw">
-                <a href="TU_LINK_AQUI">
+                <a href="https://github.com/Videogamesscz/videostore/raw/refs/heads/main/herramientas/FIX%20PEX-DEX%20CFW%204.92%20EVILNAT%20by%20Videogames%20SCZ.pkg">
                     <img src="fix.png" alt="FIX PEX">
                     <span>FIX PEX-D-PEX-DEX</span>
                 </a>
             </div>
             <div class="item-descarga" data-categoria="cfw">
-                <a href="TU_LINK_AQUI">
+                <a href="https://github.com/Videogamesscz/videostore/raw/main/herramientas/Extended_Download_Plugin_v1.00.pkg">
                     <img src="extended.png" alt="EXTENDED">
                     <span>Extended Download Plugin</span>
                 </a>
@@ -248,7 +267,7 @@
                     <img src="videostore.png" alt="VIDEOSTORE">
                     <span>VIDEOSTORE</span>
                 </a>
-
+			</div>
             <div class="item-descarga" data-categoria="multimedia">
                 <a href="TU_LINK_AQUI">
                     <img src="movian.png" alt="Movian">
@@ -285,13 +304,12 @@
                     <span>Licencias PSN</span>
                 </a>
             </div>
-
         </div>
     </div>
 
     <script type="text/javascript">
         function filtrar(categoria) {
-            var botones = ['hen', 'cfw', 'aplicaciones', 'multimedia', 'utilidades'];
+            var botones = ['hen493', 'hen492', 'cfw', 'aplicaciones', 'multimedia', 'utilidades'];
             
             for (var i = 0; i < botones.length; i++) {
                 document.getElementById('btn-' + botones[i]).className = 'icono-cat';
@@ -315,7 +333,7 @@
         }
 
         window.onload = function() {
-            filtrar('hen');
+            filtrar('hen493');
         };
     </script>
 </body>
