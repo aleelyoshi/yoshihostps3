@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Multimedia - YoshiHost PS3 - Creado por Ale el Yoshi</title>
+    <title>YoshiHost PS3 - Creado por Ale el Yoshi</title>
 
     <style type="text/css">
         /* Estilos base compatibles con PS3 */
@@ -80,6 +80,47 @@
             text-align: center;
         }
 
+        .item-boton {
+            display: inline-block;
+            background-color: #481070;
+            border: 2px solid #AC5AE7;
+            border-radius: 15px;
+            width: 170px;
+            margin: 15px 20px;
+            vertical-align: top;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .item-boton a {
+            text-decoration: none;
+            color: #FFFFFF;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: block;
+            outline: none;
+        }
+
+        .item-boton img {
+            width: 160px;
+            height: 160px;
+            border: 3px solid transparent;
+            border-radius: 15px;
+            margin-bottom: 8px;
+        }
+
+        .item-boton a:hover {
+            border-radius: 15px;
+            border-color: #C78FEF;
+            background-color: #6A18A5;
+        }
+
+        .item-boton span {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
         .item-descarga {
             display: inline-block;
             width: 170px;
@@ -104,7 +145,7 @@
             margin-bottom: 8px;
         }
 
-        .item-descarga a:hover img {
+        .item-descarga img:hover {
             border-color: #C78FEF;
             background-color: #6A18A5;
         }
@@ -124,31 +165,32 @@
     </div>
 
     <div class="container">
-        <h1>Multimedia</h1>
-        <div class="grid-descargas">
+        <h1>Plugin de Passion Wii Streaming para Movian</h1>
+        <div>
+            <p>Passion Wii Streaming es una plataforma multipantalla para Wii, Wii U, PS3 y DangoPlayer (Android,
+                Android TV y Google TV), en la Cual Podras disfrutar De Peliculas, Series, Animes, Doramas, y mucho mas.
+            </p>
+            <p>
+                Este es un plugin para el reproductor multimedia Movian, no es una aplicacion independiente.<br />
+                Necesitarás tener instalado Movian en tu PS3 para poder usar este plugin.
+            </p>
+            <div class="item-boton" data-categoria="utilidades">
+                <a
+                    href="https://github.com/aleelyoshi/yoshistore-ps3/raw/refs/heads/main/movian-plugins/Passion%20Wii%20Streaming%20Movian%20Plugin%20PS3.zip">
+                    <span>Descargar plugin</span>
+                </a>
+            </div>
+            <br />
+            <h2>Únete al grupo de Facebook de Passion Wii Streaming:</h2>
+            <img width="90%" src="img/passionwii_fbgroup.png" alt="Grupo de Facebook de Passion Wii Streaming">
+
+        </div>
+        <div class="grid-descargas" id="contenedor-tarjetas">
+
             <div class="item-descarga" data-categoria="hen493">
-                <a href="./index.html">
+                <a href="./multimedia.html">
                     <img src="img/sub/back.png" alt="Volver atras">
                     <span>Volver atrás...</span>
-                </a>
-            </div>
-            <div class="item-descarga" data-categoria="multimedia">
-                <a
-                    href="https://github.com/aleelyoshi/yoshistore-ps3/raw/refs/heads/main/apps/movianM7-7.0.256-playstation3.pkg">
-                    <img src="img/sub/movian.png" alt="Movian">
-                    <span>Movian</span>
-                </a>
-            </div>
-            <div class="item-descarga" data-categoria="multimedia">
-                <a href="./passionwii.html">
-                    <img src="img/sub/passionwii.png" alt="Passion Wii">
-                    <span>Plugin Passion Wii Streaming para Movian</span>
-                </a>
-            </div>
-            <div class="item-descarga" data-categoria="multimedia">
-                <a href="https://archive.org/download/modsgamecubeywii/Youtube-v3.01-%5BNPEB01229%5D-NoPSN.pkg">
-                    <img src="img/sub/youtube.png" alt="YouTube">
-                    <span>YouTube</span>
                 </a>
             </div>
 
